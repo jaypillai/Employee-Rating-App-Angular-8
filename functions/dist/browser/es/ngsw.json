@@ -1,0 +1,76 @@
+{
+  "configVersion": 1,
+  "timestamp": 1573337727059,
+  "index": "/es/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "/es/4-es2015.66a725e6d11fa0806224.js",
+        "/es/4-es5.3ef0aa5d0e2b09e40cbb.js",
+        "/es/index.html",
+        "/es/main-es2015.c92db35a72449020fecd.js",
+        "/es/main-es5.1a6be65bbaf3c7afd0fb.js",
+        "/es/polyfills-es2015.e9d98e5e92b2651695d5.js",
+        "/es/polyfills-es5.a17668551f01d2e249e3.js",
+        "/es/runtime-es2015.a953de62148cf562a94b.js",
+        "/es/runtime-es5.2d363b11dee726b65763.js",
+        "/es/scripts.910427f6263a42734cd9.js",
+        "/es/styles.c033bb785deb93772ee2.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "spanish",
+      "patterns": [
+        "\\/es"
+      ],
+      "strategy": "freshness",
+      "maxSize": 0,
+      "maxAge": 0,
+      "version": 1
+    }
+  ],
+  "hashTable": {
+    "/es/4-es2015.66a725e6d11fa0806224.js": "9c7877f650e5c6176ca1af493b0c391a5ba422e5",
+    "/es/4-es5.3ef0aa5d0e2b09e40cbb.js": "10211b0dccd3509b7e8b5f9efbd0fe7559c6f009",
+    "/es/index.html": "14fef52da260c0e4fefded03782f33c7f9d32ef9",
+    "/es/main-es2015.c92db35a72449020fecd.js": "8dfaa7a494e44135927e611790c84f0d378ea7ed",
+    "/es/main-es5.1a6be65bbaf3c7afd0fb.js": "f9d1091e73352ef000263706d2ba7a4b99ccbba1",
+    "/es/polyfills-es2015.e9d98e5e92b2651695d5.js": "b20b16a11f57a690e93ef6201bac411a9c2415b4",
+    "/es/polyfills-es5.a17668551f01d2e249e3.js": "767bc8d9f278af5d49dd8b18ccb8e04971514e70",
+    "/es/runtime-es2015.a953de62148cf562a94b.js": "e0890f08206cf8a8c90815398f0ad56fc357362d",
+    "/es/runtime-es5.2d363b11dee726b65763.js": "9a6d9269d47ea3ae01bc7e2600967d158f8cab80",
+    "/es/scripts.910427f6263a42734cd9.js": "b96c0d7fb89505e46f9719bd7b95eafb327170a6",
+    "/es/styles.c033bb785deb93772ee2.css": "6c0b0e02fd477eaf60dc80c1c334bde72a060c95"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}

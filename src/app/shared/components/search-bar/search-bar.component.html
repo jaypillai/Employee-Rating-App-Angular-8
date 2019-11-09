@@ -1,0 +1,13 @@
+<mat-form-field id="search-input">
+  <input matInput placeholder="Look for a employee!" i18n-placeholder="@@findEmployee"
+         [matAutocomplete]="employeeesAutocomplete" [formControl]="employeeFormControl">
+</mat-form-field>
+
+<mat-autocomplete #employeeesAutocomplete="matAutocomplete">
+  <mat-option *ngFor="let employee of filteredEmployees"
+              [value]="employee.name">
+    <a class="employee-link" [routerLink]="[routesConfig.routes.employeees.detail(employee.id)]">
+      {{employee.name | capitalizefirst}}
+    </a>
+  </mat-option>
+</mat-autocomplete>

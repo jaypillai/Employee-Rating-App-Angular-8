@@ -1,0 +1,15 @@
+<div fxLayout="row">
+  <div fxFlex="10" fxFlex.gt-sm="20"></div>
+  <div fxFlex="90" fxFlex.gt-sm="80">
+    <h1 class="header__title" i18n="@@topEmployees">Employees most liked</h1>
+    <div id="employeees-list" *ngIf="employeees$ | async as employeees; else loading">
+      <ng-container *ngFor="let employee of employeees">
+        <app-employee-card [employee]="employee"></app-employee-card>
+      </ng-container>
+    </div>
+    <ng-template #loading>
+      <app-employee-loading></app-employee-loading>
+    </ng-template>
+  </div>
+  <div fxFlex="10" fxFlex.gt-sm="20"></div>
+</div>

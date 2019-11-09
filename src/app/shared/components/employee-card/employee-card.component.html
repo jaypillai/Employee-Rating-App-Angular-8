@@ -1,0 +1,30 @@
+<mat-card class="employee-card" *ngIf="employee" [@fadeIn]="fadeIn">
+  <mat-card-header>
+    <a mat-card-avatar [routerLink]="employee.default ? [routesConfig.routes.employeees.detail(employee.id)] : []">
+      <img alt="employee avatar" mat-card-avatar
+      [src]="employee.avatarThumbnailUrl ? employee.avatarThumbnailUrl : 'assets/images/default-hero.png'">
+    </a>
+    <mat-card-title>
+      <a class="employee-detail-link" [routerLink]="employee.default ? [routesConfig.routes.employeees.detail(employee.id)] : []">
+        {{employee.name}}
+      </a>
+    </mat-card-title>
+    <mat-card-subtitle>
+      <a class="employee-detail-link" [routerLink]="employee.default ? [routesConfig.routes.employeees.detail(employee.id)] : []">
+        {{employee.alterEgo}}
+      </a>
+    </mat-card-subtitle>
+    <div class="flex-spacer"></div>
+    <div class="employee-actions">
+      {{employee.likes}}
+      <mat-icon class="icon__like--red" (click)="like(employee)">favorite
+      </mat-icon>
+    </div>
+    <div class="employee-actions">
+      <app-star-rating [rating]="employee.ratings"  [starCount]="starCount" [color]="starColor" (ratingUpdated)="onRatingChanged(employee, $event)"></app-star-rating>
+    </div>
+  </mat-card-header>
+  <!-- <a class="employee-detail-link" [routerLink]="employee.default ? [routesConfig.routes.employeees.detail(employee.id)] : []">
+    <img alt="{{employee.name}} employee image" [defaultImage]="employee.avatarBlurredUrl" [lazyLoad]="employee.avatarUrl">
+  </a> -->
+</mat-card>
