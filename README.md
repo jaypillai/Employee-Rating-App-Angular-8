@@ -5,9 +5,6 @@
   <p align="center">
     Employee Rating App with Angular 8 + Angular CLI + Angular Universal + i18n + Firebase
     <br>
-    <br>
-    <br>
-    Base project made with much :heart:. Contains CRUD, patterns, generated library, and much more!
   </p>
 </p>
 
