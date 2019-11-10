@@ -54,7 +54,7 @@ If you want to translate the messages you can use this awesome tool, [Tiny Trans
 
 ### Firebase
 
-This repo is using Firebase. We use Cloud Firestore and Cloud Storage to handle CRUD operations over the employeees and to store their images. Also Hosting and Functions to deploy the app with Universal.
+This repo is using Firebase. We use Cloud Firestore and Cloud Storage to handle CRUD operations over the employeees and to store their images.
 
 ## Travis CI
 

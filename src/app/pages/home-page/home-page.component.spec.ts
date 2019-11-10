@@ -11,6 +11,7 @@ import {MockComponent} from 'ng-mocks';
 import {NoopAnimationsModule} from '@angular/platform-browser/animations';
 import {By} from '@angular/platform-browser';
 import { EmployeeCardComponent } from 'src/app/shared/components/employee-card/employee-card.component';
+import { HttpClientModule } from '@angular/common/http';
 
 describe('HomePage', () => {
   let component: HomePageComponent;
@@ -21,7 +22,8 @@ describe('HomePage', () => {
   configureTestSuite(() => {
     TestBed.configureTestingModule({
       imports: [
-        NoopAnimationsModule
+        NoopAnimationsModule,
+        HttpClientModule
       ],
       declarations: [
         MockComponent(EmployeeCardComponent),
